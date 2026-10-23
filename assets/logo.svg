@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#0b0f0e"/>
+  
+  <!-- Background terminal grid lines - subtle industrial texture -->
+  <g stroke="#c8d0cb" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="64" x2="256" y2="64"/>
+    <line x1="0" y1="128" x2="256" y2="128"/>
+    <line x1="0" y1="192" x2="256" y2="192"/>
+    <line x1="64" y1="0" x2="64" y2="256"/>
+    <line x1="128" y1="0" x2="128" y2="256"/>
+    <line x1="192" y1="0" x2="192" y2="256"/>
+  </g>
+  
+  <!-- Padlock body - left half (rusted, offset) -->
+  <path d="M 78 118 L 78 196 Q 78 210 92 210 L 124 210 L 124 118 Z" fill="#c8d0cb" opacity="0.85"/>
+  <!-- Rust texture on left half -->
+  <path d="M 80 150 L 122 150 L 122 152 L 80 152 Z" fill="#ff5a1f" opacity="0.4"/>
+  <path d="M 80 175 L 122 175 L 122 177 L 80 177 Z" fill="#ff5a1f" opacity="0.3"/>
+  <path d="M 82 130 L 120 130 L 120 132 L 82 132 Z" fill="#ff5a1f" opacity="0.35"/>
+  
+  <!-- Padlock body - right half (shifted, separated by split line) -->
+  <path d="M 132 118 L 132 210 L 164 210 Q 178 210 178 196 L 178 118 Z" fill="#c8d0cb"/>
+  <!-- Right half machined highlight -->
+  <path d="M 132 118 L 178 118 L 178 122 L 132 122 Z" fill="#7ef2c4" opacity="0.5"/>
+  <path d="M 132 196 L 178 196 L 178 210 L 164 210 Q 178 210 178 196 Z" fill="#0b0f0e" opacity="0.3"/>
+  
+  <!-- Split gap between halves (glowing) -->
+  <rect x="124" y="116" width="8" height="96" fill="#ff5a1f"/>
+  <rect x="125" y="116" width="6" height="96" fill="#7ef2c4" opacity="0.9"/>
+  
+  <!-- Glowing chisel blade striking down through the split -->
+  <path d="M 122 40 L 134 40 L 136 116 L 120 116 Z" fill="#c8d0cb"/>
+  <!-- Chisel tip glow -->
+  <path d="M 120 116 L 136 116 L 134 130 L 122 130 Z" fill="#7ef2c4"/>
+  <path d="M 122 130 L 134 130 L 132 138 L 124 138 Z" fill="#ff5a1f"/>
+  
+  <!-- Chisel handle (industrial grip) -->
+  <rect x="118" y="16" width="20" height="24" rx="2" fill="#c8d0cb"/>
+  <rect x="120" y="20" width="16" height="3" fill="#0b0f0e"/>
+  <rect x="120" y="26" width="16" height="3" fill="#0b0f0e"/>
+  <rect x="120" y="32" width="16" height="3" fill="#0b0f0e"/>
+  
+  <!-- Shackle - left half peeled open outward -->
+  <path d="M 102 118 L 102 80 Q 102 62 118 62 L 118 74 Q 114 74 114 80 L 114 118" 
+        fill="none" stroke="#c8d0cb" stroke-width="7" stroke-linecap="square"/>
+  <!-- Peeled fragment of shackle -->
+  <path d="M 102 72 L 88 58 L 94 52 L 108 66" fill="#ff5a1f" opacity="0.8"/>
+  <path d="M 100 68 L 90 60" stroke="#ff5a1f" stroke-width="2"/>
+  
+  <!-- Shackle - right half bent/peeled outward -->
+  <path d="M 144 118 L 144 80 Q 144 62 130 62" 
+        fill="none" stroke="#c8d0cb" stroke-width="7" stroke-linecap="square"/>
+  <!-- Right shackle peel fragment -->
+  <path d="M 144 70 L 162 54 L 156 48 L 138 64" fill="#7ef2c4" opacity="0.7"/>
+  <path d="M 148 64 L 160 52" stroke="#7ef2c4" stroke-width="2"/>
+  
+  <!-- Keyhole (split) -->
+  <circle cx="122" cy="168" r="6" fill="#0b0f0e"/>
+  <circle cx="134" cy="168" r="6" fill="#0b0f0e"/>
+  <path d="M 120 172 L 120 190 L 124 190 L 124 172 Z" fill="#0b0f0e"/>
+  <path d="M 132 172 L 132 190 L 136 190 L 136 172 Z" fill="#0b0f0e"/>
+  
+  <!-- Keyhole glow edges -->
+  <path d="M 118 164 Q 122 158 126 164" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+  <path d="M 130 164 Q 134 158 138 164" fill="none" stroke="#7ef2c4" stroke-width="1.5"/>
+  
+  <!-- Impact sparks / fragments at the split -->
+  <path d="M 128 140 L 126 148 L 128 146 L 130 154 L 132 146 L 134 148 L 132 140 Z" fill="#ff5a1f"/>
+  <circle cx="116" cy="142" r="2" fill="#7ef2c4" opacity="0.8"/>
+  <circle cx="140" cy="138" r="1.5" fill="#ff5a1f" opacity="0.9"/>
+  <circle cx="112" cy="150" r="1.2" fill="#7ef2c4" opacity="0.6"/>
+  <circle cx="144" cy="148" r="1.8" fill="#ff5a1f" opacity="0.7"/>
+  
+  <!-- Corner brackets - terminal industrial framing -->
+  <path d="M 16 16 L 16 40 M 16 16 L 40 16" stroke="#7ef2c4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 240 16 L 240 40 M 240 16 L 216 16" stroke="#7ef2c4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 16 240 L 16 216 M 16 240 L 40 240" stroke="#7ef2c4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 240 240 L 240 216 M 240 240 L 216 240" stroke="#7ef2c4" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Tiny status dots -->
+  <rect x="28" y="28" width="4" height="4" fill="#ff5a1f" opacity="0.8"/>
+  <rect x="224" y="28" width="4" height="4" fill="#7ef2c4" opacity="0.8"/>
+  
+  <!-- Wordmark - small, bottom right -->
+  <text x="240" y="244" font-family="monospace" font-size="8" fill="#c8d0cb" text-anchor="end" opacity="0.5" letter-spacing="1">THEMIDA/UNPACK</text>
+</svg>
